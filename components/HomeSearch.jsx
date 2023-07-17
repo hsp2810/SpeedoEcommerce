@@ -30,7 +30,7 @@ const HomeSearch = () => {
         <input
           type='search'
           id='default-search'
-          className='block w-full p-2 pl-10 text-sm text-gray-900 placeholder:font-light rounded-lg bg-gray-200'
+          className='block w-full p-2 pl-10 text-sm text-gray-900 font-light placeholder:font-light rounded-lg bg-gray-200'
           placeholder='Search by product title, category'
           required
         />

@@ -2,10 +2,10 @@ import React from "react";
 
 const FilterSidebar = () => {
   return (
-    <div className='flex-auto w-64'>
+    <div className='w-80'>
       <aside
         id='default-sidebar'
-        class='fixed left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0'
+        class='fixed left-0 z-40 w-80 h-screen transition-transform -translate-x-full sm:translate-x-0'
         aria-label='Sidebar'
       >
         <div class='h-full px-3 py-4 overflow-y-auto bg-gray-100 rounded-lg'>
