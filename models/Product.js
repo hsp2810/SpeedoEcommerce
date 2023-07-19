@@ -4,9 +4,15 @@ const productSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      unique: true,
       required: true,
+      unique: true,
       length: [50, "Cannot exceed 20 characters"],
+    },
+
+    slug: {
+      type: String,
+      required: true,
+      unique: true,
     },
 
     description: {
@@ -15,15 +21,31 @@ const productSchema = new mongoose.Schema(
       length: [500, "Cannot exceed 500 characters"],
     },
 
-    inStock: {
+    price: {
       type: Number,
+      default: 0,
       required: true,
     },
 
-    isAvailable: {
-      type: Boolean,
-      required: true,
-    },
+    color: [
+      {
+        value: {
+          type: String,
+        },
+
+        availableSizes: [
+          {
+            value: {
+              type: String,
+            },
+
+            inStock: {
+              type: Number,
+            },
+          },
+        ],
+      },
+    ],
 
     category: {
       type: mongoose.Schema.Types.ObjectId,

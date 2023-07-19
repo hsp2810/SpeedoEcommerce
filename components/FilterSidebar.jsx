@@ -2,14 +2,14 @@ import React from "react";
 
 const FilterSidebar = () => {
   return (
-    <div className='w-80'>
+    <div className='w-[23vw]'>
       <aside
         id='default-sidebar'
-        class='fixed left-0 z-40 w-80 h-screen transition-transform -translate-x-full sm:translate-x-0'
+        className='w-[23vw] h-screen transition-transform -translate-x-full sm:translate-x-0'
         aria-label='Sidebar'
       >
-        <div class='h-full px-3 py-4 overflow-y-auto bg-gray-100 rounded-lg'>
-          <ul class='space-y-2 font-medium'>
+        <div className='h-full px-3 py-4 overflow-y-auto bg-gray-100 rounded-lg'>
+          <ul className='space-y-2 font-medium'>
             <SidebarItem title={"First"} />
             <SidebarItem title={"First"} />
             <SidebarItem title={"First"} />
@@ -25,8 +25,8 @@ const FilterSidebar = () => {
 const SidebarItem = ({ title, href }) => {
   return (
     <li>
-      <a href='#' class='flex items-center p-2 text-black rounded-lg group'>
-        <span class='flex-1 ml-3 whitespace-nowrap'>{title}</span>
+      <a href='#' className='flex items-center p-2 text-black rounded-lg group'>
+        <span className='flex-1 ml-3 whitespace-nowrap'>{title}</span>
       </a>
     </li>
   );

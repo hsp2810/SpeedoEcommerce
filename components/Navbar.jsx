@@ -9,7 +9,7 @@ const Navbar = () => {
     setShowUserModal(!showUserModal);
   };
   return (
-    <nav className='w-full fixed flex items-center h-10 bg-gray-100 p-7 justify-between'>
+    <nav className='z-50 w-full fixed flex items-center h-10 bg-gray-100 p-7 justify-between'>
       <div>
         <Link href={"/"}>
           <h1 className='font-light text-blue-800 uppercase'>
